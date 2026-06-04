@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMILTON | An American Musical</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #f4c430;
+            --dark: #0f0a00;
+            --burgundy: #4a0a0a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: var(--dark);
+            color: #e0d4b0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&q=80') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-content h1 {
+            font-size: 5.5rem;
+            color: var(--gold);
+            text-shadow: 0 0 30px rgba(244, 196, 48, 0.6);
+            margin-bottom: 1rem;
+        }
+        .hero-content p {
+            font-size: 1.6rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 10, 0, 0.95);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .nav-links a {
+            color: #e0d4b0;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--gold); }
+        
+        section { padding: 100px 5%; }
+        h2 {
+            font-size: 3rem;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 1rem;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            transition: 0.4s;
+        }
+        .gallery img:hover { transform: scale(1.05); }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
+        
+        footer {
+            background: #0a0700;
+            text-align: center;
+            padding: 3rem;
+            border-top: 3px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="color: var(--gold); font-size: 1.8rem; font-weight: bold;">HAMILTON</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#story">The Story</a>
+            <a href="#songs">Songs</a>
+            <a href="#cast">Cast</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#watch">Watch</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>HAMILTON</h1>
+            <p>An American Musical</p>
+            <p style="font-size: 1.3rem; opacity: 0.9;">Created by Lin-Manuel Miranda</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Hamilton</h2>
+        <div class="about-grid">
+            <div>
+                <p><strong>Hamilton: An American Musical</strong> is a sung-and-rapped-through musical that tells the story of American Founding Father Alexander Hamilton using a diverse cast and a blend of hip-hop, R&B, pop, and traditional show tunes.</p>
+                <p>It premiered Off-Broadway in 2015 and moved to Broadway later that year, winning 11 Tony Awards including Best Musical.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1507679799987-c7377956023c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Hamilton Stage">
+        </div>
+    </section>
+
+    <section id="story" style="background: #1a1200;">
+        <h2>The Story</h2>
+        <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center; font-size: 1.2rem;">
+            From his humble beginnings in the Caribbean to his rise as George Washington's right-hand man and first Secretary of the Treasury, Hamilton's story is told with energy, passion, and revolutionary spirit.
+        </p>
+    </section>
+
+    <section id="songs">
+        <h2>Iconic Songs</h2>
+        <div class="gallery">
+            <div><img src="https://i.ytimg.com/vi/5G5fZ0oKX9A/maxresdefault.jpg" alt="My Shot"><p style="text-align:center; margin-top:10px;">My Shot</p></div>
+            <div><img src="https://i.ytimg.com/vi/z5z7z7z7z7z/maxresdefault.jpg" alt="Wait For It"><p style="text-align:center; margin-top:10px;">Wait For It</p></div>
+            <div><img src="https://i.ytimg.com/vi/0f7f7f7f7f7/maxresdefault.jpg" alt="Helpless"><p style="text-align:center; margin-top:10px;">Helpless</p></div>
+            <div><img src="https://i.ytimg.com/vi/8f8f8f8f8f8/maxresdefault.jpg" alt="Non-Stop"><p style="text-align:center; margin-top:10px;">Non-Stop</p></div>
+        </div>
+    </section>
+
+    <section id="cast" style="background: #1a1200;">
+        <h2>Original Broadway Cast</h2>
+        <ul style="max-width: 700px; margin: 0 auto; font-size: 1.2rem; line-height: 2.2;">
+            <li><strong>Lin-Manuel Miranda</strong> – Alexander Hamilton</li>
+            <li><strong>Leslie Odom Jr.</strong> – Aaron Burr</li>
+            <li><strong>Phillipa Soo</strong> – Eliza Hamilton</li>
+            <li><strong>Renée Elise Goldsberry</strong> – Angelica Schuyler</li>
+            <li><strong>Daveed Diggs</strong> – Marquis de Lafayette / Thomas Jefferson</li>
+            <li><strong>Christopher Jackson</strong> – George Washington</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1580130662263-5f7b3c3e5e5e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Hamilton">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&q=80" alt="Stage">
+            <img src="https://picsum.photos/id/1015/800/600" alt="Cast">
+            <img src="https://picsum.photos/id/106/800/600" alt="Poster">
+        </div>
+    </section>
+
+    <section id="watch">
+        <h2>Watch Hamilton</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/0f7f7f7f7f7" title="Hamilton Trailer" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.disneyplus.com/movies/hamilton/0QJ0QJ0QJ0" target="_blank" style="color: var(--gold); font-size: 1.3rem;">
+                Watch on Disney+ →
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hamilton Fan Site • Not affiliated with the official production</p>
+        <p style="margin-top: 1rem; opacity: 0.7;">"The world will never be the same."</p>
+    </footer>
+
+</body>
+</html>
